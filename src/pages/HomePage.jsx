@@ -1,8 +1,8 @@
 export default function HomePage() {
     return (
-        <div>
+        <div className="home">
             <h1>Adam Isitmez</h1>
-            <p>Fullstack Web Develoepr</p>
+            <p>Fullstack Web Developer</p>
         </div>
     )
 }
