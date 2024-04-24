@@ -8,6 +8,7 @@ import ResumePage from './pages/ResumePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 const router = createBrowserRouter([
