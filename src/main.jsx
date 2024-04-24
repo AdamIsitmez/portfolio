@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ResumePage from './pages/ResumePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+
 import './index.css'
 
 const router = createBrowserRouter([
