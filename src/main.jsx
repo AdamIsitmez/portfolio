@@ -7,8 +7,8 @@ import HomePage from './pages/HomePage';
 import ResumePage from './pages/ResumePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import PortfolioPage from './pages/PortfolioPage';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 
 const router = createBrowserRouter([
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: 'resume',
         element: <ResumePage />,
+      },
+      {
+        path: 'portfolio',
+        element: <PortfolioPage />,
       },
     ],
   },
