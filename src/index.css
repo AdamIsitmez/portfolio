@@ -1,6 +1,8 @@
 :root {
+  --color1: #fa9500;
+  --color3: #ff5900;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  /* line-height: 1.5; */
+  line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
@@ -8,15 +10,139 @@
   background-color: #242424;
 }
 
-/* body {
+.bebas-neue-h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+}
+
+.bebas-neue-navbar {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+
+body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-} */
+  background-color: var(--color1);
+}
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 8rem;
+  line-height: 0.9;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 2;
+}
+
+.home p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.title {
+  width: 1100px;
+  animation: titleEntry 2s ease forwards;
+}
+
+.logo-link {
+  display: flex;
+  place-items: center;
+}
+
+.navbar {
+  position: absolute;
+  margin: 0px;
+  height: 150px;
+  width: 100vw;
+  z-index: 3;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto
+}
+
+.navbar-logo {
+  width: 50px;
+}
+
+.link-list {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  transition: opacity 0.5s linear;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+.nav-link::before {
+  transition: 0.5s;
+  background-color: var(--color3);
+  border-radius: 5px 0 0 0;
+  height: 7px;
+  content: "";
+  position: absolute;
+}
+
+.nav-link-fade-up::before {
+  width: 50%;
+  bottom: -10px;
+  opacity: 0;
+}
+
+.nav-link-fade-up:hover::before {
+  width: 100%;
+  bottom: 0px;
+  opacity: 1;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: none;
+}
+
+.nav-link:focus {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+@keyframes titleEntry {
+  0% {
+    padding-bottom: 100px;
+    opacity: 0;
+  }
+
+  100% {
+    padding-bottom: 0;
+    opacity: 1;
+  }
 }

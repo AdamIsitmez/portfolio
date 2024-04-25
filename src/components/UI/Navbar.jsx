@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
+
 export default function Nav({ links }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary">
-      <div className="container-fluid">
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav className="navbar">
+      <div className="navbar-container">
+        <Link className="logo-link" to="/">
+          <img className="navbar-logo" src="/src/assets/ai.svg" alt="logo of initial, A, I" />
+        </Link>
+        <div className="nav-links">
+          <ul className="link-list bebas-neue-navbar">
             {links.map((link) => link)}
           </ul>
         </div>

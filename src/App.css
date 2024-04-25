@@ -1,6 +1,31 @@
-#root {
-  /* max-width: 1280px; */
-  margin: 0 auto;
-  padding: 2rem;
-  /* text-align: center; */
+:root {
+  --left-right: calc(100vh / 2 - 100px);
+  --top-bottom: calc(100vw / 2 + 300px);
+  --color1: #fa9500;
+  --color2: #eb6424;
+}
+
+.background {
+  animation: backgroundSlide 1.5s ease-in-out forwards;
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(0 var(--left-right), 0 0, 100% 0, 100% 0, 100% 100%, var(--top-bottom) 100%);
+  background-color: var(--color2);
+  z-index: 0;
+}
+
+.background-parent {
+  filter: drop-shadow(-10px -10px 50px rgba(0, 0, 0, 0.5));
+}
+
+@keyframes backgroundSlide {
+  0% {
+    clip-path: polygon(0 var(--left-right), 0 0, 100% 0, 100% 0, 100% 100%, var(--top-bottom) 100%);
+  }
+
+  100% {
+    clip-path: polygon(0 100%, 0 0, calc(100vw - var(--top-bottom)) 0, 100% calc(100vh - var(--left-right)), 100% 100%, 0 100%);
+  }
 }
