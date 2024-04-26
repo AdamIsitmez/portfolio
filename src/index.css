@@ -32,26 +32,36 @@ body {
   background-color: var(--color1);
 }
 
-h1 {
+.title h1,
+.home-title h1 {
   font-size: 8rem;
   line-height: 0.9;
   margin: 0;
   padding: 0;
 }
 
+.title h1 {
+  font-size: 4rem;
+}
+
+
 .home,
 .content {
+  max-width: 1200px;
+  margin: auto;
   position: relative;
   display: flex;
   flex-direction: column;
-  left: 30%;
-  justify-content: center;
   height: 100vh;
   z-index: 2;
 }
 
+.home {
+  justify-content: center;
+}
+
 .content {
-  bottom: 200px;
+  top: 150px;
 }
 
 .content p {
@@ -59,9 +69,17 @@ h1 {
   font-size: 1.5rem;
 }
 
-.title {
+.title,
+.home-title {
   position: relative;
   animation: titleEntry 2s ease forwards;
+}
+
+.home-title p {
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
+  margin: 0;
+  font-size: 3rem;
 }
 
 .logo-link {
