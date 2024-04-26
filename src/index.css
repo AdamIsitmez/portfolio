@@ -11,7 +11,8 @@
 }
 
 .oswald,
-.oswald-submit {
+.oswald-submit,
+.oswald-about {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -19,9 +20,14 @@
   font-size: 1.5rem;
 }
 
-.oswald-submit {
-  margin: 20px;
+.oswald-submit,
+.oswald-about {
+  margin-left: 20px;
   letter-spacing: 0;
+}
+
+.oswald-about {
+  max-width: 800px;
 }
 
 .bebas-neue-h1,
@@ -82,11 +88,6 @@ body {
 
 .content {
   top: 150px;
-}
-
-.content p {
-  margin: 0;
-  font-size: 1.5rem;
 }
 
 .title,
