@@ -52,8 +52,6 @@ function Form() {
             return;
         }
 
-        alert(`Hello ${name}`);
-
         setName('');
         setMessage('');
         setEmail('');
@@ -69,6 +67,7 @@ function Form() {
                     type="text"
                     placeholder="Name"
                     required
+                    className='oswald'
                 />
                 <input
                     value={email}
@@ -77,6 +76,7 @@ function Form() {
                     type="email"
                     placeholder="E-mail"
                     required
+                    className='oswald'
                 />
                 <textarea
                     value={message}
@@ -85,10 +85,12 @@ function Form() {
                     type="text"
                     placeholder="Message"
                     required
+                    className='oswald'
                 />
-                <button type="submit">Submit</button>
+                <br />
+                <button className='submit-button oswald' type="submit">Submit</button>
             </form>
-            <span>{result}</span>
+            <span className='oswald-submit'>{result}</span>
             {errorMessage && (
                 <div>
                     <p className="error-text">{errorMessage}</p>
