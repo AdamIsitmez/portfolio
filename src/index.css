@@ -10,18 +10,38 @@
   background-color: #242424;
 }
 
-.bebas-neue-h1 {
+.oswald,
+.oswald-submit {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.oswald-submit {
+  margin: 20px;
+  letter-spacing: 0;
+}
+
+.bebas-neue-h1,
+.bebas-neue-navbar,
+.bebas-neue-form {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.bebas-neue-h1 {
   letter-spacing: 0.2rem;
 }
 
 .bebas-neue-navbar {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 2rem;
+}
+
+.bebas-neue-form {
+  font-size: 1.5rem;
 }
 
 
@@ -52,7 +72,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: calc(100vh - 150px);
   z-index: 2;
 }
 
@@ -71,6 +91,7 @@ body {
 
 .title,
 .home-title {
+  margin-left: 20px;
   position: relative;
   animation: titleEntry 2s ease forwards;
 }
@@ -83,6 +104,7 @@ body {
 }
 
 .logo-link {
+  margin-left: 20px;
   display: flex;
   place-items: center;
 }
