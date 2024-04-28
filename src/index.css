@@ -6,7 +6,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: white;
   background-color: #242424;
 }
 
@@ -181,9 +181,61 @@ body {
   color: var(--color3);
 }
 
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-radius: 3px;
+  border: solid 2px transparent;
+  width: 400px;
+  height: 40px;
+  background-color: var(--color1);
+}
+
+.download:hover {
+  cursor: pointer;
+  border-color: white;
+}
+
+.download:active {
+  background-color: #c47704;
+
+}
+
+.download span {
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  line-height: 0.7rem;
+  padding-top: 3px;
+  margin: 0;
+}
+
+.skills {
+  margin-left: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skills-list p {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: normal;
+  font-family: oswald;
+  border: solid 2px white;
+  padding: 5px;
+  border-radius: 3px;
+}
+
 @keyframes titleEntry {
   0% {
-    bottom: 80px;
+    bottom: 60px;
     opacity: 0;
   }
 
