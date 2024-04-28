@@ -10,8 +10,7 @@
 
 .form input {
     border-radius: 3px;
-    transition: border-color 0.5s;
-    transition: background-color 2s;
+    transition: border-color 0.5s, background-color 2s;
     box-sizing: border-box;
     color: white;
     margin-bottom: 20px !important;
@@ -33,14 +32,14 @@
 .form textarea:focus {
     transition: border-color 1s;
     outline: none;
-    border: solid 2px white;
+    border-color: white;
     background-color: rgb(255, 147, 59);
 }
 
 .form textarea {
     margin-bottom: 10px;
     border-radius: 3px;
-    transition: border-color 0.5s ease;
+    transition: border-color 0.5s, background-color 2s;
     border: 2px solid transparent;
     box-sizing: border-box;
     color: white;

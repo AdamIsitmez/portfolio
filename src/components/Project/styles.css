@@ -1,0 +1,44 @@
+:root {
+    --color1: #fa9500;
+    --color3: #ff5900;
+
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    width: 600px;
+    margin-top: 30px;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.project-card>p {
+    margin: 0;
+}
+
+.project-card {
+    transition: background-color 0.5s, border-color 1s;
+    border: solid 2px transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-card:hover {
+    background-color: rgb(255, 147, 59);
+    border-color: white;
+}
+
+.projects a:visited {
+    color: white;
+    text-decoration: none;
+}
