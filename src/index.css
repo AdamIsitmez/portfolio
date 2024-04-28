@@ -233,6 +233,35 @@ body {
   border-radius: 3px;
 }
 
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-logo {
+  transition: filter 0.5s ease;
+  height: 50px;
+  filter: invert(59%) sepia(10%) saturate(3359%) hue-rotate(330deg) brightness(107%) contrast(87%);
+}
+
+.icon-list a {
+  z-index: 99;
+}
+
+.footer-logo:hover {
+  cursor: pointer;
+  filter: invert(100%);
+}
+
+
+
 @keyframes titleEntry {
   0% {
     bottom: 60px;
