@@ -17,8 +17,9 @@
     text-decoration: none;
 }
 
-.project-card>p {
+.project-card p {
     margin: 0;
+    color: white;
 }
 
 .project-card {
