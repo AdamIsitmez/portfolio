@@ -248,7 +248,7 @@ body {
 .footer-logo {
   transition: filter 0.5s ease;
   height: 50px;
-  filter: invert(59%) sepia(10%) saturate(3359%) hue-rotate(330deg) brightness(107%) contrast(87%);
+  filter: invert(78%) sepia(23%) saturate(2700%) hue-rotate(336deg) brightness(106%) contrast(96%);
 }
 
 .icon-list a {
